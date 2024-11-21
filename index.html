@@ -11,12 +11,37 @@ body{
 margin: 0;padding:0;
 /* 배경색 */
 background-color:rgb(201, 15, 117) ;
+
   /* display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh; */
-
+ /* 애니매이션 정의 */
+animation: bgChange 3s infinite alternate;
+/* 무한반복infinite  */
+/* 무한교차 alternat */
 }
+/* 배경색 변경 애니매이션 */
+@keyframes bgChange {
+    0%{
+        background-color:rgb(201, 15, 117) ;
+
+    }
+    50%{
+
+        background-color:#FFF;
+
+    }
+    100%{background-color:rgb(201, 15, 117) ;
+    
+    }
+
+
+
+    
+}
+
+
 div{
     /* 요소를 중앙정렬 하고자 할 떄 아래 구조로 코딩함  */
      position: absolute; /* 위치 */
